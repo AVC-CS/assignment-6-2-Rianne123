@@ -13,9 +13,9 @@ int getClosestMed(int, int, int);
 // complete two functions
 int getRandom(void)
 {
-        /***************************************************
-         * Code your program here
-         ***************************************************/
+        int num = 0;
+        num = rand() % 100;
+        return num;
 }
 int getClosestMed(int rdnum1, int rdnum2, int rdnum3)
 {
