@@ -20,6 +20,6 @@ int getRandom(void)
 int getClosestMed(int rdnum1, int rdnum2, int rdnum3)
 {
         int mean = 0;
-        mean = (rdnum1 + rdnum2 + rdnum3) / 3
+        mean = (rdnum1 + rdnum2 + rdnum3) / 3;
         return mean;
 }
