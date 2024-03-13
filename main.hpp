@@ -19,8 +19,7 @@ int getRandom(void)
 }
 int getClosestMed(int rdnum1, int rdnum2, int rdnum3)
 {
-        int mean = 0;
-        mean = (rdnum1 + rdnum2 + rdnum3) / 3;
+        double mean = (rdnum1 + rdnum2 + rdnum3) / 3;
         double dif1 = abs(mean - rdnum1);
         double dif2 = abs(mean - rdnum2);
         double dif3 = abs(mean - rdnum3);
@@ -33,13 +32,13 @@ int getClosestMed(int rdnum1, int rdnum2, int rdnum3)
                         closest = rdnum3;
                 }
         } 
-        else if (dif2 < dif1) {
+        else {
                 if (dif2 < dif3) {
                         closest = rdnum2;
                 }
                 else {
                         closest = rdnum3;
                 }
-        }     
+        } 
         return closest;
 }
